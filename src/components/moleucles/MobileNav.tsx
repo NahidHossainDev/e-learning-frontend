@@ -49,8 +49,8 @@ export function MobileNav({ isOpen, onOpenChange }: MobileNavProps) {
 					</div>
 					<nav className='flex-1 px-6 py-4'>
 						<ul className='space-y-4'>
-							{navItems.map((item) => (
-								<li key={item.href}>
+							{navItems.map((item, i) => (
+								<li key={i}>
 									<Link
 										href={item.href}
 										className='block py-2 text-base font-medium transition-colors hover:text-sky-400'

@@ -1,4 +1,10 @@
-import { Header, Hero, PopularCourses } from "@/components/organisms";
+import {
+	Categories,
+	Header,
+	Hero,
+	PopularCourses,
+	Statistics,
+} from "@/components/organisms";
 
 export function HomePage() {
 	return (
@@ -7,8 +13,8 @@ export function HomePage() {
 			<main className='flex-1'>
 				<Hero />
 				<PopularCourses />
-				{/* <Categories /> */}
-				{/* <Statistics /> */}
+				<Categories />
+				<Statistics />
 				{/* <Testimonials /> */}
 				{/* <Instructors /> */}
 			</main>

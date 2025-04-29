@@ -1,3 +1,5 @@
+export * from "./Categories";
 export * from "./Header";
 export * from "./Hero";
 export * from "./PopularCourses";
+export * from "./Statistics";
