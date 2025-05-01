@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { toast } from "sonner";
 
 const socialIcons = {
 	Facebook: <Facebook />,
@@ -28,8 +29,10 @@ export function Footer() {
 
 	const handleSubscribe = (e: React.FormEvent) => {
 		e.preventDefault();
-		console.log(email);
-
+		if (!email) return;
+		toast.success("Subscription successful!", {
+			description: "Thank you for subscribing to our newsletter.",
+		});
 		setEmail("");
 	};
 
@@ -84,7 +87,11 @@ export function Footer() {
 									className='text-gray-500 hover:text-primary transition-colors'
 									aria-label={social.name}
 								>
-									{socialIcons[social.icon]}
+									{
+										socialIcons[
+											social.icon as keyof typeof socialIcons
+										]
+									}
 									<span className='sr-only'>
 										{social.name}
 									</span>
