@@ -91,7 +91,11 @@ export function Statistics() {
 							<Card className='h-full bg-gradient-to-br from-white to-sky-50 dark:from-gray-900 dark:to-gray-800 border-t-4 border-t-sky-400'>
 								<CardContent className='p-6 flex flex-col items-center text-center'>
 									<div className='mb-4 p-3 rounded-full bg-sky-100 dark:bg-sky-900/30'>
-										{iconMapper[stat.icon]}
+										{
+											iconMapper[
+												stat.icon as keyof typeof iconMapper
+											]
+										}
 									</div>
 									<div className='text-3xl font-bold mb-1'>
 										{counters[index].toLocaleString()}
