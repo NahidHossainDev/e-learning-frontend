@@ -7,10 +7,10 @@ import { Award, BookOpen, GraduationCap, Users } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const iconMapper = {
-	GraduationCap,
-	BookOpen,
-	Users,
-	Award,
+	GraduationCap: <GraduationCap />,
+	BookOpen: <BookOpen />,
+	Users: <Users />,
+	Award: <Award />,
 };
 export function Statistics() {
 	const [counters, setCounters] = useState(stats.map(() => 0));

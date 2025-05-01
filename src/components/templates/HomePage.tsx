@@ -4,6 +4,7 @@ import {
 	Hero,
 	PopularCourses,
 	Statistics,
+	Testimonials,
 } from "@/components/organisms";
 
 export function HomePage() {
@@ -15,7 +16,7 @@ export function HomePage() {
 				<PopularCourses />
 				<Categories />
 				<Statistics />
-				{/* <Testimonials /> */}
+				<Testimonials />
 				{/* <Instructors /> */}
 			</main>
 			{/* <Footer /> */}
