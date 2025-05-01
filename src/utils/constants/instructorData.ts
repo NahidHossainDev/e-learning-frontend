@@ -1,3 +1,5 @@
+import { InstructorProps } from "@/components/moleucles";
+
 export const instructors: InstructorProps[] = [
 	{
 		id: 1,
