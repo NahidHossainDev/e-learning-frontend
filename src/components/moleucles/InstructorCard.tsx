@@ -27,7 +27,7 @@ export function InstructorCard({
 	isFeatured,
 }: InstructorProps) {
 	return (
-		<Card className='h-full overflow-hidden hover:shadow-md transition-all'>
+		<Card className='h-full overflow-hidden hover:shadow-md transition-all py-0'>
 			<CardContent className='p-0'>
 				<div className='p-6 flex flex-col items-center text-center'>
 					<div className='relative'>

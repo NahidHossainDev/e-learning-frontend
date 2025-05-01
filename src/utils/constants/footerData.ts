@@ -38,3 +38,10 @@ export const socialLinks = [
 	{ name: "LinkedIn", icon: "LinkedIn", href: "/" },
 	{ name: "YouTube", icon: "Youtube", href: "/" },
 ];
+
+export const bottomFooterLinks = [
+	{ name: "Terms", href: "/" },
+	{ name: "Privacy", href: "/" },
+	{ name: "Cookie ", href: "/" },
+	{ name: "Sitemap", href: "/" },
+];

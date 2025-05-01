@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { footerLinks, socialLinks } from "@/utils/constants";
+import { bottomFooterLinks, footerLinks, socialLinks } from "@/utils/constants";
 import { motion } from "framer-motion";
 import {
 	Facebook,
@@ -135,30 +135,15 @@ export function Footer() {
 							reserved.
 						</p>
 						<div className='mt-4 md:mt-0 flex flex-wrap gap-4 text-sm text-gray-500 dark:text-gray-400'>
-							<Link
-								href='/terms'
-								className='hover:text-primary transition-colors'
-							>
-								Terms
-							</Link>
-							<Link
-								href='/privacy'
-								className='hover:text-primary transition-colors'
-							>
-								Privacy
-							</Link>
-							<Link
-								href='/cookies'
-								className='hover:text-primary transition-colors'
-							>
-								Cookies
-							</Link>
-							<Link
-								href='/sitemap'
-								className='hover:text-primary transition-colors'
-							>
-								Sitemap
-							</Link>
+							{bottomFooterLinks?.map(({ name, href }, key) => (
+								<Link
+									key={key}
+									href={href}
+									className='hover:text-primary transition-colors'
+								>
+									{name}
+								</Link>
+							))}
 						</div>
 					</div>
 				</div>
