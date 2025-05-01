@@ -38,7 +38,7 @@ export function InstructorCard({
 							</AvatarFallback>
 						</Avatar>
 						{isFeatured && (
-							<Badge className='absolute -top-2 -right-2 bg-sky-400 hover:bg-sky-500'>
+							<Badge className='absolute -top-2 -right-2 bg-primary hover:bg-sky-500'>
 								Top Rated
 							</Badge>
 						)}
