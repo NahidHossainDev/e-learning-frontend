@@ -1,11 +1,13 @@
 import {
 	Categories,
+	Footer,
 	Header,
 	Hero,
 	PopularCourses,
 	Statistics,
 	Testimonials,
 } from "@/components/organisms";
+import { Instructors } from "../organisms/Instructors";
 
 export function HomePage() {
 	return (
@@ -17,9 +19,9 @@ export function HomePage() {
 				<Categories />
 				<Statistics />
 				<Testimonials />
-				{/* <Instructors /> */}
+				<Instructors />
 			</main>
-			{/* <Footer /> */}
+			<Footer />
 		</div>
 	);
 }
