@@ -21,7 +21,6 @@ export function SearchBar() {
 				placeholder='Search courses...'
 				value={query}
 				onChange={(e) => setQuery(e.target.value)}
-				className='pr-10 border border-gray-200 focus-visible:ring-sky-400'
 			/>
 			<Button
 				type='submit'
